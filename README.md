@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# LICENSE
+The source code is licensed MIT.  
+## Vim key bindings
+### 基本操作
+|key|操作結果|
+|---|---|
+|h|左に移動|
+|j|下に移動|
+|k|上に移動|
+|l|右に移動|
+|x|カーソル位置の文字を削除|
+|i|カーソル位置から入力モードに切り替え|
+|a|カーソル位置の右から入力モードに切り替え|
+|Esc|ノーマルモードに切り替え|
+|v|ジュアルモードに切り替え|
+|:wq|保存してファイルを閉じる|
+|:q|保存せずファイルを閉じる|
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### ちょっと実践的
+|key|操作結果|
+|---|---|
+|w|次の単語の先頭へ|
+|e|単語の最後の文字へ|
+|b|前の単語の先頭へ|
+|W|,や.や;などの単語を飛ばして次の単語の先頭へ|
+|E|,や.や;などの単語を飛ばして単語の最後の文字へ|
+|B|,や.や;などの単語を飛ばして前の単語の先頭へ|
+|^|行の先頭へ|
+|$|行の末尾へ|
+|gg|ファイルの先頭へ|
+|G|ファイルの末尾へ|
 
-## Available Scripts
+|key|操作結果|
+|---|---|
+|I|行の先頭から入力モードに切り替え|
+|A|行の末尾から入力モードに切り替え|
+|o|下に空行を挿入して入力モードに切り替え|
+|yy|行コピー|
+|p|カーソル位置の下の行に貼り付け|
+|P|カーソル位置の上の行に貼り付け|
+|dd|行削除|
+|D|カーソル位置から行末まで削除|
+|数字|複数行に対して操作（他のキーと組み合わせる）|
 
-In the project directory, you can run:
+#### ファイル全体を整形
+|key|操作結果|
+|---|---|
+|gg|ファイル先頭へ|
+|v|ビジュアルモードに切り替え|
+|G|ファイル末尾へ|
+|=|選択範囲を整形|
 
-### `npm start`
+#### ファイル内の好きな行番号に移動
+|key|操作結果|
+|---|---|
+|gg|ファイル先頭へ|
+|数字|行番号を指定|
+|G|指定した行番号に移動|
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 囲まれた文字列を削除して入力モードに
+|key|操作結果|
+|---|---|
+|ci”|“”で囲まれた文字列を削除して入力モードに|
+|ci{|{}で囲まれた文字列を削除して入力モードに|
+|cit|HTMLタグで囲まれた文字列を削除して入力モードに|
